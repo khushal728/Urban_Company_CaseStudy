@@ -49,7 +49,7 @@ GROUP BY review_month
 ORDER BY review_month;
 ```
 ### 2. Subservices with Most Reviews
-```
+```sql
 SELECT subservice_name, COUNT(*) AS review_count
 FROM urban_summary
 GROUP BY subservice_name
@@ -58,10 +58,34 @@ LIMIT 10;
 ```
 
 ### 3. Most Expensive Subservices
-```
+```sql
 SELECT subservice_name, MAX(subservice_charge) AS max_price
 FROM urban_summary
 GROUP BY subservice_name
 ORDER BY max_price DESC
 LIMIT 10;
 ```
+
+### 4. City-Wise Ratings
+```sql
+SELECT city_name, ROUND(AVG(ratings), 2) AS avg_rating, COUNT(*) AS total_reviews
+FROM urban_summary
+GROUP BY city_name
+ORDER BY avg_rating DESC;
+```
+### 5. Service Category Insights
+```sql
+SELECT service, COUNT(*) AS total_reviews, ROUND(AVG(ratings), 2) AS avg_rating
+FROM urban_summary
+GROUP BY service
+ORDER BY total_reviews DESC;
+```
+### 6. Review Frequency by Hour
+```sql
+SELECT EXTRACT(HOUR FROM time::TIME) AS review_hour,
+       COUNT(*) AS review_count
+FROM urban_summary
+GROUP BY review_hour
+ORDER BY review_hour;
+```
+
