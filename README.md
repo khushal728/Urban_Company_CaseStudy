@@ -128,6 +128,9 @@ df['Sentiment'] = df['polarity'].apply(lambda x: 'Positive' if x > 0
 
 5. Word Cloud → Most frequent keywords in reviews.
 
+## Dashboard Live
+![Dashboard](https://github.com/khushal728/Urban_Company_CaseStudy/issues/1#issue-3335442893)
+
 ## 🔑 Key Findings
 
 🚨 56.8% reviews were negative, only 39% positive → major trust gap.
