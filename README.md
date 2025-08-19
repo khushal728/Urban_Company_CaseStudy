@@ -88,4 +88,14 @@ FROM urban_summary
 GROUP BY review_hour
 ORDER BY review_hour;
 ```
+### 🧠 Sentiment Analysis with Python
 
+We used TextBlob in Power BI (Python integration) to classify reviews:
+```py
+from textblob import TextBlob
+import pandas as pd
+
+df['polarity'] = df['review_comment'].apply(lambda x: TextBlob(str(x)).sentiment.polarity)
+df['Sentiment'] = df['polarity'].apply(lambda x: 'Positive' if x > 0 
+                                       else ('Negative' if x < 0 else 'Neutral'))
+```
