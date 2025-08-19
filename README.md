@@ -47,3 +47,21 @@ SELECT DATE_TRUNC('month', date) AS review_month, COUNT(*) AS total_reviews
 FROM urban_summary
 GROUP BY review_month
 ORDER BY review_month;
+```
+### 2. Subservices with Most Reviews
+```
+SELECT subservice_name, COUNT(*) AS review_count
+FROM urban_summary
+GROUP BY subservice_name
+ORDER BY review_count DESC
+LIMIT 10;
+```
+
+### 3. Most Expensive Subservices
+```
+SELECT subservice_name, MAX(subservice_charge) AS max_price
+FROM urban_summary
+GROUP BY subservice_name
+ORDER BY max_price DESC
+LIMIT 10;
+```
