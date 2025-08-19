@@ -31,6 +31,21 @@ However, analyzing these reviews manually is **time-consuming** and provides **l
 - **Power BI** → Dashboard & visualization.  
 
 ---
+📂 Project Structure
+```
+├── data/
+│   ├── UC_Reviews.csv
+│   ├── Services.csv
+├── scripts/
+│   ├── sentiment_analysis.py
+│   ├── sql_queries.sql
+├── dashboard/
+│   ├── UrbanCompany_Dashboard.pbix
+│   ├── dashboard.png
+├── README.md
+```
+
+---
 
 ## 📂 Dataset  
 We used two datasets:  
