@@ -35,7 +35,7 @@ However, analyzing these reviews manually is **time-consuming** and provides **l
 ## 📂 Dataset  
 We used two datasets:  
 1. **UC_Reviews.csv** → Customer reviews (Date, Time, Rating, Review Title, Review Comment).  
-2. **Services.csv** → Service details (Service, Subservice, Charges, City, Country, Source).  
+2. **UC.csv** → Service details (Service, Subservice, Charges, City, Country, Source).  
 
 ---
 
