@@ -1,6 +1,6 @@
 # Urban Company Customer Sentiment & Review Analysis  
 
-![Dashboard Screenshot](dashboard.png)  
+![Dashboard Screenshot](https://github.com/khushal728/Urban_Company_CaseStudy/blob/main/Screenshot%202025-08-18%20211523.png)
 *Urban Company Sentiment Analysis Dashboard built with Power BI*  
 
 ---
